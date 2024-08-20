@@ -16,7 +16,7 @@ export default async function ProjectsPage() {
   return (
     <DefaultLayout>
       <div className="py-8 fcenter">
-        <SectionHeader>My Projects</SectionHeader>
+        <SectionHeader>My Projects777</SectionHeader>
       </div>
       <Col className="gap-4 sm:gap-6">
         {projects.map((project) => (
@@ -38,7 +38,6 @@ export default async function ProjectsPage() {
               <Card.Description className="line-clamp-none">
                 {project.description}
               </Card.Description>
-              <Card.Tags tags={project.tags} />
             </Card.Content>
           </Card.Container>
         ))}
