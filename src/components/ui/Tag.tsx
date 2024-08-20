@@ -14,7 +14,7 @@ export function TagPill({
     >
       <div className="relative mr-1 lg:mr-1.5 -translate-x-0 fcenter">
         <Image
-          src={"/icons/" + (tag.iconFileName || tag.slug + ".svg")}
+          src={tag.icon}
           alt={tag.name}
           width={18 * (tag.iconScale || 1)}
           height={18 * (tag.iconScale || 1)}

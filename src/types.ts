@@ -18,6 +18,7 @@ interface Category {
 interface Tag {
   slug: string;
   name: string;
+  icon: string;
   iconFileName?: string;
   iconScale?: number;
   categories: Category[];
@@ -31,6 +32,7 @@ interface DateRange {
 
 interface Project {
   title: string;
+  thumbnail: string;
   slug: string;
   description: string;
   websiteUrl?: string;

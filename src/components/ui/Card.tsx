@@ -127,6 +127,13 @@ export function Container({
 export function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="relative rounded-lg border group md:border-[var(--border)] hover:border-[var(--border-hover)] hover:bg-[var(--bg-hover)] trans">
+      {project.thumbnail && (
+        <img
+          src={project.thumbnail}
+          alt={`${project.title} thumbnail`}
+          className="w-full h-48 object-cover rounded-t-lg"
+        />
+      )}
       <div className="z-10 flex flex-col p-4 space-y-3 cursor-pointer md:space-y-4 sm:p-5">
         {/* Title */}
         <div className="flex items-center flex-none gap-3">
@@ -169,13 +176,11 @@ export function ProjectCard({ project }: { project: Project }) {
           ))}
         </div>
       </div>
-      <Link
-        href={`/projects/${project.slug}`}
-        className="absolute inset-0 z-0 block opacity-0"
-      ></Link>
+      
     </div>
   );
 }
+
 
 export function ProjectCardList({
   projects,
