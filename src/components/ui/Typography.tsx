@@ -14,7 +14,7 @@ export function SectionHeader({ children }: { children: React.ReactNode }) {
     <motion.h2
       viewport={{ once: true }}
       variants={variants}
-      className="py-10 text-3xl font-medium sm:py-12 md:py-28 md:text-5xl text-blue-50"
+      className="py-8 text-3xl font-medium sm:py-4 md:py-8 md:text-5xl text-blue-50"
     >
       {children}
     </motion.h2>

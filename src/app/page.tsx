@@ -72,10 +72,11 @@ export default async function Home() {
     {
       title: "Guacarí Hotel",
       slug: "project-1",
-      description: "No hice nada en un proyecto grande de un hotel, entonces me cargaron y entregamos algo bonito.",
+      description: "This web application simplifies the management of hotel guests, room reservations, and restaurant inventory. The platform streamlines daily operations, offering staff an efficient solution for managing guest details and maintaining accurate tracking of restaurant supplies.",
+
       websiteUrl: "https://example.com/project-1",
       githubUrl: "https://github.com/usuario/project-1",
-      dateRange: { start: "2023-06-01", end: "2023-10-01" },
+      dateRange: { start: "2024-06-01", end: "2024-10-01" },
       tags: [
         { name: "React", icon: "/icons/react.png", slug: "frontend", categories: [{ title: "Frontend", slug: "frontend" }] },
         { name: "Express", icon: "/icons/express-js.svg", slug: "backend", categories: [{ title: "Backend", slug: "backend" }] },
@@ -83,17 +84,19 @@ export default async function Home() {
         { name: "JavaScript", icon: "/icons/javascript.png", slug: "frontend", categories: [{ title: "Frontend", slug: "frontend" }] }
       ],
       content: [
-        "<p>No hice nada en un proyecto grande de un hotel, entonces me cargaron y entregamos algo bonito</p>"
+        "<p>This web application simplifies the management of hotel guests, room reservations, and restaurant inventory. The platform streamlines daily operations, offering staff an efficient solution for managing guest details and maintaining accurate tracking of restaurant supplies.</p>",
+        "<p>This project was sold and is currently being used to manage a hotel in Colombia.</p>"
       ],
+
       thumbnail: "/icons/hotel.jpg"
     },
     {
       title: "Aerolinea Singapur",
       slug: "project-2",
-      description: "Tampoco hice nada en un proyecto grande de un avion, entonces me cargaron y entregamos algo bonito.",
+      description: "I developed a website for a fictional airline, drawing inspiration from Avianca. The site enables users to track flight statuses and explore various travel options. It’s designed with a clean, user-friendly interface, ensuring a smooth and intuitive experience. This project was an academic exercise aimed at honing frontend development skills, utilizing mock APIs.",
       websiteUrl: "https://example.com/project-1",
       githubUrl: "https://github.com/usuario/project-2",
-      dateRange: { start: "2023-11-01", end: "2023-09-10" },
+      dateRange: { start: "2024-04-01", end: "2024-05-10" },
       tags: [
         { name: "React", icon: "/icons/react.png", slug: "frontend", categories: [{ title: "Frontend", slug: "frontend" }] },
         { name: "JavaScript", icon: "/icons/javascript.png", slug: "frontend", categories: [{ title: "Frontend", slug: "frontend" }] },
@@ -108,20 +111,28 @@ export default async function Home() {
 
   const experiences = [
     {
-      organization: "Universidad de Antioquia",
-      title: "Systems Engineer Student",
-      dateRange: { start: "2017", end: "2025" },
-      description: "Nunca puse atención en clase",
-      content: "<p>En el celular y hablando todos los días en clase</p>",
+      organization: " Tutor in Machine Learning Technical Component",
+      title: "Sapiencia",
+      dateRange: { start: "September 2023", end: "November 2023" },
+      description: "I taught Python for Machine Learning to 30 students remotely, developing and managing both theoretical and practical content. My efforts led to successful student certifications and a comprehensive learning experience.",
+      content: "<p>.</p>",
       slug: "experience-1"
     },
     {
-      organization: "Clases",
-      title: "Profesor de Python",
-      dateRange: { start: "2023", end: "2023" },
-      description: "Enseñé a estudiantes usando ChatGPT",
-      content: "<p>puro GPT</p>", // Un solo string en lugar de un array
+      organization: "Parchese Store",
+      title: "Founder and CEO",
+      dateRange: { start: "October 2017", end: "December 2023" },
+      description: "I made key decisions to meet sales goals and ensure financial control. I led a team of 5, managing tasks such as payroll and inventory. I launched a website with 2500 products, optimized inventory and shipping processes, and handled digital marketing and content development.",
+      content: "<p>.</p>", // Un solo string en lugar de un array
       slug: "experience-2"
+    },
+    {
+      organization: " Lost Items Agent",
+      title: "Teleperformance at Uber",
+      dateRange: { start: "October 2017", end: "December 2023" },
+      description: "I helped Uber users recover lost items and was named Top Performer for exceeding KPIs. I developed skills in adaptability, learning, and communication while supporting various customer service areas.",
+      content: "<p>.</p>", // Un solo string en lugar de un array
+      slug: "experience-3"
     },
     // Agrega más experiencias según sea necesario...
   ];

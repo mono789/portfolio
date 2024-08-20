@@ -18,7 +18,7 @@ const Particles = dynamic(() => import("@/components/Particles"), {
 export const metadata = {
   title: "Juan Andrés Rivera",
   description:
-    "Jeffrey Lan is a software engineer, founder, and student at University of Washington based in Seattle.",
+    "Juan Andrés is a software engineer student at University of Antioquia",
 };
 
 export default function RootLayout({

@@ -49,7 +49,7 @@ export function Description({
   return (
     <div
       className={cn(
-        "text-sm leading-6 md:text-base md:leading-7 line-clamp-2 group-hover:line-clamp-none text-slate-300 group-hover:text-slate-100 trans relative z-20",
+        "text-sm leading-6 md:text-base md:leading-7 group-hover:line-clamp-none text-slate-300 group-hover:text-slate-100 trans relative z-20",
         className
       )}
     >
@@ -163,7 +163,7 @@ export function ProjectCard({ project }: { project: Project }) {
         </div>
 
         {/* Description */}
-        <div className="text-sm leading-6 md:leading-7 line-clamp-2 text-slate-300">
+        <div className="text-sm leading-6 md:leading-7 line-clamp-none text-slate-300">
           {project.description}
         </div>
 

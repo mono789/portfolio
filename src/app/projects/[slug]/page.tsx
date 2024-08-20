@@ -42,7 +42,15 @@ export default async function Page({ params }: { params: { slug: string } }) {
             className="flex-none text-slate-200"
           />
         </Row>
+
+        <div>
+          {project.content.map((paragraph, index) => (
+            <div key={index} dangerouslySetInnerHTML={{ __html: paragraph }} />
+          ))}
+        </div>
+        
         <p>{project.description}</p>
+        
       </Col>
       <section className="flex flex-col gap-4">
         <h3 className="text-xl font-medium md:text-2xl">Technologies</h3>
