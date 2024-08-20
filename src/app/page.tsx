@@ -119,16 +119,16 @@ export default async function Home() {
       slug: "experience-1"
     },
     {
-      organization: "Parchese Store",
-      title: "Founder and CEO",
+      organization: "Founder and CEO",
+      title: "Parchese Store",
       dateRange: { start: "October 2017", end: "December 2023" },
       description: "I made key decisions to meet sales goals and ensure financial control. I led a team of 5, managing tasks such as payroll and inventory. I launched a website with 2500 products, optimized inventory and shipping processes, and handled digital marketing and content development.",
       content: "<p>.</p>", // Un solo string en lugar de un array
       slug: "experience-2"
     },
     {
-      organization: " Lost Items Agent",
-      title: "Teleperformance at Uber",
+      organization: "Teleperformance at Uber",
+      title: "Lost Item Agent",
       dateRange: { start: "October 2017", end: "December 2023" },
       description: "I helped Uber users recover lost items and was named Top Performer for exceeding KPIs. I developed skills in adaptability, learning, and communication while supporting various customer service areas.",
       content: "<p>.</p>", // Un solo string en lugar de un array

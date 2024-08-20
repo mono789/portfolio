@@ -26,23 +26,11 @@ export function ExperienceCard({
 }) {
   return (
     <div
-      // whileInView="inView"
-      // variants={{
-      //   initial: {
-      //     opacity: 0,
-      //     y: 20,
-      //   },
-      //   inView: {
-      //     opacity: 1,
-      //     y: 0,
-      //     transition: {
-      //       duration: 0.3,
-      //     },
-      //   },
-      // }}
       className="w-full flex flex-col space-y-1 cursor-default md:px-4 md:py-4 lg:p-6 lg:space-y-2 trans md:hover:bg-[var(--bg-hover)] rounded-lg"
       style={{
         alignItems: align === "left" ? "flex-start" : "flex-end",
+        wordWrap: "break-word", // Fuerza el ajuste de palabras largas
+        wordBreak: "break-word", // Maneja palabras largas sin espacios
       }}
     >
       <h3
@@ -64,15 +52,14 @@ export function ExperienceCard({
       <div
         style={{
           textAlign: align,
+          maxWidth: "100%", // Asegura que el contenido no desborde
+          overflowWrap: "break-word", // Ajusta el contenido para evitar desbordamientos
         }}
       >
         <p className="text-xs sm:leading-6 md:text-sm text-slate-300 md:leading-6">
           {experience.description}
         </p>
       </div>
-      {/* <div>
-        <BlockContent value={experience.content} />
-      </div> */}
     </div>
   );
 }
@@ -81,7 +68,7 @@ export function ExperienceList({ experiences }: { experiences: Experience[] }) {
   // console.log("experiences", experiences);
   return (
     <div
-      className="grid mx-6 sm:mx-8"
+      className="grid mx-6 sm:mx-8 max-w-full overflow-hidden"
       // initial="initial"
       // whileInView={"inView"}
       // variants={{
