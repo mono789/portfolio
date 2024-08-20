@@ -1,0 +1,26 @@
+.block-content-container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    /* width: 100%; */
+    padding: 16px 20px;
+    font-size: 13px;
+    line-height: 2;
+}
+
+.block-content-container li {
+    list-style: inside;
+    padding: 0;
+    margin-bottom: 4px;
+}
+
+@media (min-width : 768px) {
+    .block-content-container {
+        font-size: 14px;
+    }
+
+    .block-content-container li {
+        margin-bottom: 6px;
+    }
+}
