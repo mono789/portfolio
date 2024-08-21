@@ -91,20 +91,19 @@ export default async function Home() {
       thumbnail: "/icons/hotel.jpg"
     },
     {
-      title: "Aerolinea Singapur",
+      title: "Pruebas Saber PRO",
       slug: "project-2",
-      description: "I developed a website for a fictional airline, drawing inspiration from Avianca. The site enables users to track flight statuses and explore various travel options. It’s designed with a clean, user-friendly interface, ensuring a smooth and intuitive experience. This project was an academic exercise aimed at honing frontend development skills, utilizing mock APIs.",
+      description: "I built a predictive model to estimate student performance on the Saber Pro exams. The project entailed cleaning data using pandas and numpy, addressing missing values with SimpleImputer, normalizing features with StandardScaler, and transforming categorical data with OneHotEncoder to enhance the model's precision.",
       websiteUrl: "https://example.com/project-1",
-      githubUrl: "https://github.com/usuario/project-2",
+      githubUrl: "https://github.com/mono789/ProyectoModelos1",
       dateRange: { start: "2024-04-01", end: "2024-05-10" },
       tags: [
-        { name: "React", icon: "/icons/react.png", slug: "frontend", categories: [{ title: "Frontend", slug: "frontend" }] },
-        { name: "JavaScript", icon: "/icons/javascript.png", slug: "frontend", categories: [{ title: "Frontend", slug: "frontend" }] },
+        { name: "Python", icon: "/icons/python.svg", slug: "backend", categories: [{ title: "Backend", slug: "backend" }] },
       ],
       content: [
-        "<p>No hice nada en un proyecto grande de un hotel, entonces me cargaron y entregamos algo bonito</p>"
+        "<p>.</p>"
       ],
-      thumbnail: "/icons/singapur.jpg"
+      thumbnail: "/icons/modelo.jpg"
     },
     
   ];
@@ -127,12 +126,20 @@ export default async function Home() {
       slug: "experience-2"
     },
     {
-      organization: "Teleperformance at Uber",
-      title: "Lost Item Agent",
+      organization: "Lost Item Agent at Uber",
+      title: "Teleperformance",
       dateRange: { start: "October 2017", end: "December 2023" },
       description: "I helped Uber users recover lost items and was named Top Performer for exceeding KPIs. I developed skills in adaptability, learning, and communication while supporting various customer service areas.",
       content: "<p>.</p>", // Un solo string en lugar de un array
       slug: "experience-3"
+    },
+    {
+      organization: "Web Developer",
+      title: "Guacarí Hotel",
+      dateRange: { start: "May 2024", end: "August 2024" },
+      description: "Developed a comprehensive management system for Guacari Hotel, utilizing React, Express, and PostgreSQL. Enhanced operational efficiency and customer satisfaction through features like real-time updates and automated reporting. Managed version control and streamlined deployment processes to ensure smooth and efficient updates.",
+      content: "<p>.</p>", // Un solo string en lugar de un array
+      slug: "experience-4"
     },
     // Agrega más experiencias según sea necesario...
   ];
