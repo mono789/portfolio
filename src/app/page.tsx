@@ -10,6 +10,9 @@ import Link from "next/link";
 import { Qoute } from "@/components/ui/Qoute";
 import { AboutMe } from "@/components/AboutMe";
 import { TechSection } from "@/components/TechSection";
+import { SkillsSection } from "@/components/SkillSection";
+import { CertificatesSection } from "@/components/CertificatesSection";
+
 
 export default async function Home() {
 
@@ -62,6 +65,61 @@ export default async function Home() {
     {
       name: "C++",
       icon: "/icons/c++.png",
+      categories: [{ title: "Backend", slug: "backend" }]
+    },
+    {
+      name: "Docker",
+      icon: "/icons/docker.svg",
+      categories: [{ title: "Backend", slug: "backend" }]
+    },
+    {
+      name: "AWS",
+      icon: "/icons/aws.svg",
+      categories: [{ title: "Web", slug: "web" }]
+    },
+    {
+      name: "Grafana",
+      icon: "/icons/grafana-svgrepo-com.svg",
+      categories: [{ title: "Monitoring", slug: "monitoring" }]
+    },
+    {
+      name: "Prometheus",
+      icon: "/icons/prometheus-svgrepo-com.svg",
+      categories: [{ title: "Monitoring", slug: "monitoring" }]
+    },
+    {
+      name: "Drools",
+      icon: "/icons/drools-seeklogo.svg",
+      categories: [{ title: "Backend", slug: "backend" }]
+    },
+    {
+      name: "Jupyter",
+      icon: "/icons/jupyter-notebook.svg",
+      categories: [{ title: "Backend", slug: "backend" }]
+    },
+    {
+      name: "Kubernetes",
+      icon: "/icons/kubernetes-icon.svg",
+      categories: [{ title: "Backend", slug: "backend" }]
+    },
+    {
+      name: "Swagger",
+      icon: "/icons/swagger-svgrepo-com.svg",
+      categories: [{ title: "Backend", slug: "backend" }]
+    },
+    {
+      name: "TypeScript",
+      icon: "/icons/typescript.svg",
+      categories: [{ title: "Frontend", slug: "frontend" }]
+    },
+    {
+      name: "Node.js",
+      icon: "/icons/node-js.svg",
+      categories: [{ title: "Backend", slug: "backend" }]
+    },
+    {
+      name: "Maven",
+      icon: "/icons/maven-svgrepo-com.svg",
       categories: [{ title: "Backend", slug: "backend" }]
     },
 
@@ -254,6 +312,126 @@ export default async function Home() {
     },
     // Agrega más experiencias según sea necesario...
   ];
+
+  const skillsData = [
+    {
+      name: "Scrum",
+      icon: "/icons/scrum.png",
+      categories: [{ title: "Agile & DevOps", slug: "Agile & DevOps" }]
+    },
+    {
+      name: "CI/CD",
+      icon: "/icons/ci-cd.png",
+      categories: [{ title: "Agile & DevOps", slug: "Agile & DevOps" }]
+    },
+    {
+      name: "Unit Testing",
+      icon: "/icons/unit-testing1.png",
+      categories: [{ title: "Agile & DevOps", slug: "Agile & DevOps" }]
+    },
+    {
+      name: "Integration Testing",
+      icon: "/icons/integration-testing.png",
+      categories: [{ title: "Agile & DevOps", slug: "Agile & DevOps" }]
+    },
+    {
+      name: "Code Quality",
+      icon: "/icons/code-qa.png",
+      categories: [{ title: "Agile & DevOps", slug: "Agile & DevOps" }]
+    },
+    {
+      name: "Leadership",
+      icon: "/icons/leadership.png",
+      categories: [{ title: "Soft Skills", slug: "Soft Skills" }]
+    },
+    {
+      name: "Teamwork",
+      icon: "/icons/teamwork.png",
+      categories: [{ title: "Soft Skills", slug: "Soft Skills" }]
+    },
+    {
+      name: "Communication",
+      icon: "/icons/communication.png",
+      categories: [{ title: "Soft Skills", slug: "Soft Skills" }]
+    },
+    {
+      name: "Adaptability",
+      icon: "/icons/adaptability.png",
+      categories: [{ title: "Soft Skills", slug: "Soft Skills" }]
+    },
+    {
+      name: "Problem Solving",
+      icon: "/icons/problem-solving.png",
+      categories: [{ title: "Soft Skills", slug: "Soft Skills" }]
+    },
+    {
+      name: "Clean Code",
+      icon: "/icons/clean-code.png",
+      categories: [{ title: "Specialized Knowledge", slug: "Specialized Knowledge" }]
+    },
+    {
+      name: "Solid Principles",
+      icon: "/icons/solid.png",
+      categories: [{ title: "Specialized Knowledge", slug: "Specialized Knowledge" }]
+    },
+    {
+      name: "Design Patterns",
+      icon: "/icons/design-patterns.png",
+      categories: [{ title: "Specialized Knowledge", slug: "Specialized Knowledge" }]
+    },
+    {
+      name: "Software Development Life Cycle",
+      icon: "/icons/life-cicle.png",
+      categories: [{ title: "Specialized Knowledge", slug: "Specialized Knowledge" }]
+    },
+    {
+      name: "English - B2",
+      icon: "/icons/English_language.png",
+      categories: [{ title: "Languages", slug: "languages" }]
+    },
+    {
+      name: "Italian - B2",
+      icon: "/icons/Flag_of_Italy.svg",
+      categories: [{ title: "Languages", slug: "languages" }]
+    },
+    {
+      name: "Spanish - Native",
+      icon: "/icons/images.png",
+      categories: [{ title: "Languages", slug: "languages" }]
+    },
+    
+    // Agrega más habilidades según sea necesario
+  ];
+
+
+  const certificatesData = [
+    {
+      name: "AWS Cloud Technical Essentials",
+      image: "/icons/aws.jpeg",
+      verifyLink: "https://www.coursera.org/account/accomplishments/verify/WSOC0KSV362U"
+    },
+    {
+      name: "Application Development using Microservices and Serverless",
+      image: "/icons/microservices.jpeg",
+      verifyLink: "https://www.coursera.org/account/accomplishments/verify/IKYST3S3BN7L"
+    },
+    {
+      name: "CI/CD",
+      image: "/icons/cd-cd.jpeg",
+      verifyLink: "https://www.coursera.org/account/accomplishments/verify/QSCNBNJDGT6S"
+    },
+    {
+      name: "Introduction to Containers w/ Docker, Kubernetes & OpenShift",
+      image: "/icons/containers.jpeg",
+      verifyLink: "https://www.coursera.org/account/accomplishments/verify/9V0B7ZIPGSTN"
+    },
+    {
+      name: "Introduction to Git and GitHub",
+      image: "/icons/git.jpeg",
+      verifyLink: "https://www.coursera.org/account/accomplishments/verify/IHFQPMSR4BE4"
+    },
+    // Agrega más certificados según sea necesario
+  ];
   
   const data = await getHomePageData();
   console.log("render home page");
@@ -293,6 +471,22 @@ export default async function Home() {
         <SectionHeader>Development Skills</SectionHeader>
         <div className="flex flex-wrap justify-center">
           <TechSection data={techItems} />
+        </div>
+      </SectionContainer>
+
+      {/* skills section */}
+
+      <SectionContainer>
+        <SectionHeader>Technical Skills & Methodologies</SectionHeader>
+        <div className="flex flex-wrap justify-center">
+          <SkillsSection data={skillsData} />
+        </div>
+      </SectionContainer>
+
+      <SectionContainer>
+        <SectionHeader>Certificates</SectionHeader>
+        <div className="flex flex-wrap justify-center">
+          <CertificatesSection data={certificatesData} />
         </div>
       </SectionContainer>
 
