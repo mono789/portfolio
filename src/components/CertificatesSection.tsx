@@ -33,7 +33,6 @@ function CertificateCard({ certificate }: { certificate: { name: string; image: 
 export function CertificatesSection({ data }: { data: { name: string; image: string; verifyLink: string }[] }) {
   return (
     <div className="flex flex-col items-center w-full space-y-8">
-      <h2 className="text-2xl font-bold text-center my-8">My Certificates</h2>
       <div className="flex flex-wrap justify-center gap-6 max-w-[80%]">
         {data.map((certificate, i) => (
           <CertificateCard key={i} certificate={certificate} />
